@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="text-align: center;">
+            registration form
+        </title>
+
+    </head>
+    <div class="mmk">
+    <body style="background-color: #10fb4e;">
+        <h1 style=
+        >Student Registration Form</h1>
+        <style>
+        div.mmk{
+            position:relative;
+            left: 580px;
+
+            }
+        </style>
+        <p>Fill in this form to register</p>
+        <form action="http://127.0.0.1:5000/kiran", method="POST">
+            <p><label style="font-weight: bold;" for="fname">First Name:</label>
+            <input placeholder="Enter your first name" type="text" id="fname" name="fname"></p>
+            <p><label style="font-weight: bold;" for="lname">Last Name:</label>
+            <input placeholder="Enter your last name" type="text" id="lname" name="lname"></p>
+            <p><label style="font-weight: bold;" for="email">E-mail:</label>
+            <input placeholder="Enter your e-mail" type="email" id="email" name="email"></p>
+            <p><label style="font-weight: bold;" for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth"></p>
+            <p><label style="font-weight: bold;" for="setusername">Set Username:</label>
+            <input placeholder="Set Username" type="text" id="setusername" name="setusername"></p>
+            <p><label style="font-weight: bold;" for="setpassword">Set Password:</label>
+            <input placeholder="Set Password" type="password" id="setusername" name="setusername"></p>
+
+
+            <p style="font-weight: bold;">Gender</p>
+            <p><input type="radio" id="male" name="fav" value="male">
+            <label for="male">Male</label><br>
+            <input style="margin-top: 10px;" type="radio" id="female" name="fav" value="female">
+            <label for="female">Female</label><br>
+            <input style="margin-top: 10px;" type="radio" id="others" name="fav" value="others">
+            <label for="others">Others</label><br></p>
+
+            <p><label style="font-weight: bold;" for="browser">Course :</label>
+            <input placeholder="Course"  list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="phy">
+                <option value="che">
+                <option value="bio">
+                <option value="maths">
+                <option value="eng">
+              </datalist></p>
+
+            <p><input type="submit" value="Register"></p>
+        </form>
+    </body>
+    </div>
+
+</html>
